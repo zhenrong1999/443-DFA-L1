@@ -1,0 +1,5 @@
+pytest
+pytest-cov
+bandit
+flake8
+autopep8

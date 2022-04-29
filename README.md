@@ -35,3 +35,12 @@ L = {w ∈ Σ * | w contain substring “2 litres”, “1kg”, “100%” ...}
 
 L1. Place Finder (E.g. Country, Organization, Shops, States etc.)
 Example: Malaysia, Australia, Penang, Pizza Hut, Intel etc.
+
+
+# Steps to run scripts
+./.env/Scripts/activate
+python main.py
+
+# Steps to test src codes
+./.env/Scripts/activate
+python -m pytest ./test
