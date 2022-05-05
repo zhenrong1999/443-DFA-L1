@@ -44,3 +44,8 @@ python main.py
 # Steps to test src codes
 ./.env/Scripts/activate
 python -m pytest ./test
+
+
+# Reference
+[Malaysia Area Names](https://www.citypopulation.de/en/malaysia/cities/)
+[Wikipedia Location Names and Organization](https://event.ifi.uni-heidelberg.de/?page_id=532)

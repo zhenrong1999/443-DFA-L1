@@ -2,4 +2,11 @@ pytest
 pytest-cov
 bandit
 flake8
-autopep8
+networkx
+matplotlib
+black
+pylint
+scipy
+bs4
+requests
+pandas
