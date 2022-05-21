@@ -1,0 +1,450 @@
+Alor Gajah
+Alor Setar
+Asajaya
+Bachok
+Bagan Datuk
+Bakong
+Balik Pulau
+Baling
+Bandar Baharu
+Bandar Baru Bangi
+Bandar Baru Selayang
+Bandar Bera
+Bandar Permaisuri
+Bandar Seri Jempol
+Batang Padang
+Batu Gajah
+Batu Pahat
+Bau
+Beaufort
+Belaga
+Belawai
+Beluran
+Beluru
+Bentong
+Bera
+Besut
+Betong
+Bintangor
+Bintulu
+Bukit Mabong
+Bukit Mabong[6]
+Bukit Mertajam
+Cameron Highlands
+Central Seberang Perai
+Chukai
+Dalat
+Daro
+Dungun
+Federal Territory (Malaysia)
+George Town
+Gerik
+Gombak
+Gua Musang
+Hilir Perak
+Hulu Langat
+Hulu Perak
+Hulu Selangor
+Hulu Terengganu
+Interior
+Jasin
+Jelebu
+Jeli
+Jempol
+Jerantut
+Jitra
+Johor
+Johor Bahru
+Julau
+Kabong
+Kalabakan
+Kampar
+Kampung Raja
+Kangar
+Kanowit
+Kapit
+Kedah
+Kelantan
+Kemaman
+Keningau
+Kepala Batas
+Kerian
+Kinabatangan
+Kinta
+Klang
+Kluang
+Kota Belud
+Kota Bharu
+Kota Kinabalu
+Kota Marudu
+Kota Setar
+Kota Tinggi
+Kuah
+Kuala Berang
+Kuala Dungun
+Kuala Kangsar
+Kuala Klawang
+Kuala Krai
+Kuala Kubu Bharu
+Kuala Langat
+Kuala Lipis
+Kuala Lumpur
+Kuala Muda
+Kuala Nerang
+Kuala Nerus
+Kuala Penyu
+Kuala Pilah
+Kuala Rompin
+Kuala Selangor
+Kuala Terengganu
+Kuantan
+Kubang Pasu
+Kuching
+Kudat
+Kulai
+Kulim
+Kunak
+Labuan
+Lahad Datu
+Langkawi
+Larut, Matang and Selama
+Lawas
+Limbang
+Lipis
+Long Lama
+Lubok Antu
+Lundu
+Machang
+Malacca
+Malacca City
+Malaysia
+Manjung
+Maran
+Marang
+Marudi
+Matu
+Melaka Tengah
+Meradong
+Mersing
+Miri
+Muallim
+Muar
+Mukah
+Nabawan
+Negeri Sembilan
+North Seberang Perai
+Northeast Penang Island
+Padang Terap
+Pahang
+Pakan
+Papar
+Parit Buntar
+Pasir Mas
+Pasir Puteh
+Pekan
+Penampang
+Penang
+Pendang
+Perak
+Perak Tengah
+Perlis
+Petaling
+Pitas
+Pokok Sena
+Pontian
+Pontian Kechil
+Port Dickson
+Pusa
+Putatan
+Putrajaya
+Ranau
+Raub
+Rembau
+Rompin
+Sabah
+Sabak
+Sabak Bernam
+Salak Tinggi
+Samarahan
+Sandakan
+Saratok
+Sarawak
+Sarikei
+Sebauh
+Segamat
+Selangau
+Selangor
+Semporna
+Sepang
+Serdang
+Seremban
+Seri Iskandar
+Seri Manjung
+Serian
+Setiu
+Sibu
+Sik
+Simanggang
+Simunjan
+Sipitang
+Song
+South Seberang Perai
+Southwest Penang Island
+Sri Aman
+Subang
+Subis
+Sungai Jawi
+Sungai Petani
+Taiping
+Tambunan
+Tampin
+Tanah Merah
+Tanah Rata
+Tangkak
+Tanjung Malim
+Tanjung Manis
+Tapah
+Tatau
+Tawau
+Tebedu
+Telang Usan
+Teluk Datok
+Teluk Intan
+Telupid
+Temerloh
+Tenom
+Terengganu
+Tongod
+Tuaran
+Tumpat
+Victoria
+West Coast
+Yan
+Yan Besar
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+Antigua and Barbuda
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Côte d'Ivoire
+Cabo Verde
+Cambodia
+Cameroon
+Canada
+Central African Republic
+Chad
+Chile
+China
+Colombia
+Comoros
+Congo
+Congo-Brazzaville
+Costa Rica
+Croatia
+Cuba
+Cyprus
+Czechia
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Eswatini
+Ethiopia
+Fiji
+Finland
+France
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Greece
+Grenada
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Holy See
+Honduras
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Madagascar
+Malawi
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+North Korea
+North Macedonia
+Norway
+Oman
+Pakistan
+Palau
+Palestine State
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Qatar
+Romania
+Russia
+Rwanda
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Sweden
+Switzerland
+Syria
+Tajikistan
+Tanzania
+Thailand
+Timor-Leste
+Togo
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States of America
+Uruguay
+Uzbekistan
+Vanuatu
+Venezuela
+Vietnam
+Yemen
+Zambia
+Zimbabwe
+Africa
+Antarctica
+Asia
+Europe
+North America
+South America
+Afro-Eurasia
+Americas
+Eurasia
+Oceania
+Amazonia
+Arctica
+Asiamerica
+Atlantica
+Avalonia
+Baltica
+Cimmeria
+Congo Craton
+Euramerica
+Kalaharia
+Kazakhstania
+Laramidia
+Laurentia
+North China
+Siberia
+South China
+East Antarctica
+Pampia
+Cuyania
+Chilenia
+Southeast Asia

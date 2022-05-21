@@ -3,7 +3,11 @@
 CPT 443 Assignment
 2021/2022
 Report Due: 27 May 2022 Program Demo: 28/29/30 May 2022
-eLearn: i. Softcopy of Report – PDF, ii. Source Code of Program
+
+eLearn:
+
+1. Softcopy of Report – PDF,
+2. Source Code of Program
 
 Write a well-structured, well-documented recognizer Deterministic Finite Automata (DFA) for the
 assigned language. The program must be based on a complete DFA for the language, but you can
@@ -22,30 +26,73 @@ boldface of the pattern occurred in the text etc.).
 You also hand in a typed technical report on your project. Recommended outline:
 I. Introduction – state your language, define your scope and give the complete DFA (sample DFA if the
 complete one is too huge).
+
 II. Implementation Information
- a. how your read and processed the strings
- b. overview of programming constructs used for your program
+
+    a. how your read and processed the strings
+    b. overview of programming constructs used for your program
+
 III. Conclusion – Summary
+
 IV. Appendix – Sample/Full programs.
 
-Σ = { a,..z, A,..Z, 0,…9, and other symbols found the sample text}
+``
+Σ = { a,..z, A,..Z, 0,…9, and other symbols found the sample text}``
+
 Example languages
-L = {w ∈ Σ * | w contain substring “Malaysia”, “Kuala Lumpur”, “Penang” ...}
-L = {w ∈ Σ * | w contain substring “2 litres”, “1kg”, “100%” ...}
+
+``
+L = {w ∈ Σ *| w contain substring “Malaysia”, “Kuala Lumpur”, “Penang” ...}
+``
+
+``
+L = {w ∈ Σ* | w contain substring “2 litres”, “1kg”, “100%” ...}``
 
 L1. Place Finder (E.g. Country, Organization, Shops, States etc.)
 Example: Malaysia, Australia, Penang, Pizza Hut, Intel etc.
 
+Open Window Terminal Powershell.
 
-# Steps to run scripts
-./.env/Scripts/activate
+``` powershell
+conda init powershell
+```
+
+Restart powershell
+
+``` powershell
+conda env create -n 443-DFA-ASN --file ENV.yml
+```
+
+## Additional for not importing ENV.yml
+
+``` powershell
+conda config --env --set channel_priority strict
+```
+
+``` powershell
+conda install --channel conda-forge pygraphviz
+```
+
+``` powershell
+pip install - r requirements.txt
+```
+
+## Steps to run scripts
+
+``` powershell
+conda activate 443-DFA-ASN
 python main.py
+```
 
-# Steps to test src codes
+## Steps to test src codes
+
+``` powershell
 ./.env/Scripts/activate
 python -m pytest ./test
+```
 
+## Reference
 
-# Reference
-[Malaysia Area Names](https://www.citypopulation.de/en/malaysia/cities/)
-[Wikipedia Location Names and Organization](https://event.ifi.uni-heidelberg.de/?page_id=532)
+- [Malaysia Area Names](https://www.citypopulation.de/en/malaysia/cities/)
+
+- [Wikipedia Location Names and Organization](https://event.ifi.uni-heidelberg.de/?page_id=532)

@@ -37,7 +37,7 @@ class Trie:
 
     # Trie data structure class
     def __init__(self):
-        self.root = self.getNode()
+        self.root = self.getNode("")
 
     def getNode(self, char=""):
 

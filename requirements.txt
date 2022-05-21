@@ -2,11 +2,12 @@ pytest
 pytest-cov
 bandit
 flake8
-networkx
-matplotlib
 black
 pylint
+networkx
+matplotlib
 scipy
 bs4
 requests
 pandas
+pygraphviz
