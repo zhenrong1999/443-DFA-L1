@@ -1,7 +1,7 @@
 import src.trie as trie
 import src.source as fileManagement
 
-dictionaryList = fileManagement.readFile("sample\ListOfPlace.txt")
+dictionaryList = fileManagement.readFile("data\ListOfPlace.txt")
 t = trie.Trie()
 for key in dictionaryList:
     t.insert(key)
