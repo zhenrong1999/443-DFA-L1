@@ -40,7 +40,7 @@ class Dfa:
         self.pointingNode = self.root
         self.inTrapState = False
 
-    def initializeDfaState(self, key):
+    def initializeDfa(self, key):
         pCrawl = self.root
         length = len(key)
         for level in range(length):
@@ -65,11 +65,11 @@ class Dfa:
             print("Found end state. String is valid")
         return pCrawl.isEndState
 
-    def initializeSearch(self):
+    def resetDfaState(self):
         self.pointingNode = self.root
         self.inTrapState = False
 
-    def insertNextChar(self, key):
+    def inputNextChar(self, key):
         if len(key) == 1 and key in allElement and self.inTrapState is False:
             pCrawl = self.pointingNode
             index = pCrawl.get_next_node_index(key)

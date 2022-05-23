@@ -95,4 +95,6 @@ python -m pytest ./test
 
 - [Malaysia Area Names](https://www.citypopulation.de/en/malaysia/cities/)
 
-- [Wikipedia Location Names and Organization](https://event.ifi.uni-heidelberg.de/?page_id=532)
+- [Wiki Location Names and Organization](https://event.ifi.uni-heidelberg.de/?page_id=532)
+
+- [Wikipedia continent](https://en.wikipedia.org/wiki/Continent)

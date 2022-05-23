@@ -15,7 +15,7 @@ class UI:
         self.t = DFA.Dfa()
         self.patternFound = {}
         for key in dictionaryList:
-            self.t.initializeDfaState(key)
+            self.t.initializeDfa(key)
         root.title("DFA Simple Machine")
         root.columnconfigure(0, weight=1)
         root.rowconfigure(0, weight=1)
@@ -36,7 +36,7 @@ class UI:
         resultTextFrame.grid(column=0, row=1, sticky=(tk.N, tk.S, tk.W, tk.E))
         resultTextLabel = ttk.Label(resultTextFrame, text="Output Text")
         resultTextLabel.grid(column=0, row=2, sticky=(tk.N, tk.S, tk.W, tk.E))
-        self.resultText = tk.Text(resultTextFrame)
+        self.resultText = tk.Text(resultTextFrame, bg="#f5f5f5")
         self.resultText.grid(column=0, row=3, sticky=(tk.N, tk.S, tk.W, tk.E))
         # file button
         buttonFrame = ttk.Frame(mainframe, padding="3 3 12 12")
@@ -51,6 +51,21 @@ class UI:
         )
         self.dictionaryButton.grid(column=1, row=0, sticky=(tk.N, tk.S, tk.W, tk.E))
 
+        self.rerunButton = ttk.Button(
+            buttonFrame, text="Run DFA", command=self.rerunButtonClicked
+        )
+        self.rerunButton.grid(column=2, row=0, sticky=(tk.N, tk.S, tk.W, tk.E))
+
+        self.clearLogButton = ttk.Button(
+            buttonFrame, text="Clear Info Log", command=self.clearLogButtonClicked
+        )
+        self.clearLogButton.grid(column=3, row=0, sticky=(tk.N, tk.S, tk.W, tk.E))
+
+        self.clearInputTextButton = ttk.Button(
+            buttonFrame, text="Clear Input Tex", command=self.clearInputTextClicked
+        )
+        self.clearInputTextButton.grid(column=4, row=0, sticky=(tk.N, tk.S, tk.W, tk.E))
+
         infoTextFrame = ttk.Frame(mainframe, padding="3 3 12 12")
         infoTextFrame.grid(column=1, row=1, sticky=(tk.N, tk.S, tk.W, tk.E))
         infoTextFrame.columnconfigure(0, weight=3)
@@ -61,10 +76,8 @@ class UI:
         self.infoText.grid(column=0, row=1, sticky=(tk.S, tk.E))
 
     def executeOnText(self, func):
-        self.sampleText.config(state="normal")
         self.resultText.config(state="normal")
         func()
-        self.sampleText.config(state="disabled")
         self.resultText.config(state="disabled")
 
     def executeOnInfoText(self, func):
@@ -80,17 +93,27 @@ class UI:
         dictionaryList = fileManagement.readFile(filename)
         self.t = DFA.Dfa()
         for key in dictionaryList:
-            self.t.initializeDfaState(key)
+            self.t.initializeDfa(key)
         # Prompt user for success
         self.executeOnInfoText(lambda: self.infoText.delete(1.0, tk.END))
         self.executeOnInfoText(
             lambda: self.infoText.insert(tk.END, "Dictionary loaded")
         )
         # Check if result is empty
-        if self.resultText.get(1.0, tk.END) != "":
-            text = self.sampleText.get(1.0, tk.END)
+        self.rerunButtonClicked()
+
+    def rerunButtonClicked(self):
+        text = self.sampleText.get(1.0, tk.END)
+        if text != "":
             self.executeOnText(lambda: self.resultText.delete(1.0, tk.END))
             self.DfaStart(text)
+
+    def clearInputTextClicked(self):
+        self.sampleText.delete(1.0, tk.END)
+        self.executeOnText(lambda: self.resultText.delete(1.0, tk.END))
+
+    def clearLogButtonClicked(self):
+        self.executeOnInfoText(lambda: self.infoText.delete(1.0, tk.END))
 
     def fileButtonClicked(self):
 
@@ -107,13 +130,8 @@ class UI:
                 lines = f.readlines()
                 # merge list to strings
                 text = "".join(lines)
-
-                def func():
-                    self.sampleText.delete(1.0, tk.END)
-                    self.resultText.delete(1.0, tk.END)
-                    self.sampleText.insert(tk.END, text)
-
-                self.executeOnText(func)
+                self.clearInputTextClicked()
+                self.sampleText.insert(tk.END, text)
                 self.DfaStart(text)
 
     def highlightText(self, text):
@@ -144,15 +162,24 @@ class UI:
                 self.patternFound[pattern] = 1
 
     def patternFoundPrint(self):
-        self.infoText.tag_configure("important", background="red")
-        self.executeOnInfoText(
-            lambda: self.infoText.insert(tk.END, "Pattern Found:\n", ("important"))
-        )
-        self.infoText.tag_configure("patternFound", background="#90ee90")
-        for key, value in self.patternFound.items():
+
+        if self.patternFound:
+            self.infoText.tag_configure("important", background="#90ee90")
+            self.executeOnInfoText(
+                lambda: self.infoText.insert(tk.END, "Pattern Found:\n", ("important"))
+            )
+            self.infoText.tag_configure("patternFound", background="#90ee90")
+            for key, value in self.patternFound.items():
+                self.executeOnInfoText(
+                    lambda: self.infoText.insert(
+                        tk.END, key + " : " + str(value) + "\n", ("patternFound")
+                    )
+                )
+        else:
+            self.infoText.tag_configure("important", background="red")
             self.executeOnInfoText(
                 lambda: self.infoText.insert(
-                    tk.END, key + " : " + str(value) + "\n", ("patternFound")
+                    tk.END, "Pattern Not Found\n", ("important")
                 )
             )
 
@@ -164,12 +191,12 @@ class UI:
         self.patternFoundPrint()
 
     def DfaInput(self, text):
-        self.t.initializeSearch()
+        self.t.resetDfaState()
 
         stack = [""]
         for char in text:
             # char = text[pIndex]
-            stateOfDfa = self.t.insertNextChar(char)
+            stateOfDfa = self.t.inputNextChar(char)
             stack[-1] += char
             if stateOfDfa is None and char in self.seperatorChar:
                 if len(stack) > 1:

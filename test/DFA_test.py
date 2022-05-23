@@ -18,8 +18,8 @@ class Test_dfa_node_1:
 
 class Test_Dfa:
     t = DFA.Dfa()
-    t.initializeDfaState("test")
-    t.initializeDfaState("testa")
+    t.initializeDfa("test")
+    t.initializeDfa("testa")
 
     def test_search_Exists(self):
         assert self.t.search("test") is True
@@ -28,28 +28,28 @@ class Test_Dfa:
         assert self.t.search("test3") is False
 
     def test_search_Char_by_Char(self):
-        self.t.initializeSearch()
+        self.t.resetDfaState()
         for i in "test":
-            self.t.insertNextChar(i)
+            self.t.inputNextChar(i)
         assert self.t.getCurrentState() is True
 
     def test_search_Char_by_Char2(self):
-        self.t.initializeSearch()
+        self.t.resetDfaState()
         for i in "tes":
-            self.t.insertNextChar(i)
-        assert self.t.insertNextChar("t") is True
+            self.t.inputNextChar(i)
+        assert self.t.inputNextChar("t") is True
 
     def test_search_Char_by_Char3(self):
-        self.t.initializeSearch()
+        self.t.resetDfaState()
         for i in "tes":
-            self.t.insertNextChar(i)
-        assert self.t.insertNextChar(" ") is None
+            self.t.inputNextChar(i)
+        assert self.t.inputNextChar(" ") is None
 
     def test_search_Char_by_Char4(self):
-        self.t.initializeSearch()
+        self.t.resetDfaState()
         for i in "tesxx":
-            self.t.insertNextChar(i)
-        assert self.t.insertNextChar(" ") is None
+            self.t.inputNextChar(i)
+        assert self.t.inputNextChar(" ") is None
 
     # def test_return_relation_array(self):
     #     listResult = self.t.return_relation_array()
